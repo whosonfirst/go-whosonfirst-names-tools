@@ -25,7 +25,7 @@ _Please write me_
 16:59:14.273177 [wof-names-validate][index] STATUS directory /usr/local/data/whosonfirst-data/data 4m30.089235929s
 ```
 
-Ensure that all the `name:` properties for a WOF document can be parsed by the [go-whosonfirst-names](https://github.com/whosonfirst/go-whosonfirst-names) `tags.NewLangTag` function.
+Ensure that all the `name:{LANGUAGETAG}` properties for a WOF document can be parsed by the [go-whosonfirst-names](https://github.com/whosonfirst/go-whosonfirst-names) `tags.NewLangTag` function.
 
 ## See also
 
