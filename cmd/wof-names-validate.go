@@ -19,7 +19,7 @@ func main() {
 	flag.Parse()
 
 	logger := log.SimpleWOFLogger()
-	
+
 	cb := func(fh io.Reader, ctx context.Context, args ...interface{}) error {
 
 		ok, err := utils.IsPrincipalWOFRecord(fh, ctx)
