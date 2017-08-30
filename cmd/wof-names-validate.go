@@ -45,7 +45,7 @@ func main() {
 			_, err := tags.NewLangTag(n)
 
 			if err != nil {
-				logger.Error("Feature ID %s has an invalid language tag '%s'", f.Id(), n)
+				logger.Warning("Feature ID %s has an invalid language tag '%s'", f.Id(), n)
 			}
 		}
 

@@ -300,11 +300,27 @@ func Names(f geojson.Feature) map[string][]string {
 
 	names_map := make(map[string][]string)
 
+	// this is not awesome but pending a resolution
+	// of this we'll just :shrug: and move along...
+	// https://github.com/tidwall/gjson/issues/38
+
+	if f.Id() == "101958375" {
+		return names_map
+	}
+
 	r := gjson.GetBytes(f.Bytes(), "properties")
+
+	if !r.Exists() {
+		return names_map
+	}
 
 	for k, v := range r.Map() {
 
 		if !strings.HasPrefix(k, "name:") {
+			continue
+		}
+
+		if !v.Exists() {
 			continue
 		}
 

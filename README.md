@@ -16,6 +16,15 @@ All of this package's dependencies are bundled with the code in the `vendor` dir
 
 _Please write me_
 
+### wof-names-validate
+
+```
+./bin/wof-names-validate -mode repo /usr/local/data/whosonfirst-data
+16:56:14.320098 [wof-names-validate] WARNING Feature ID 102147495 has an invalid language tag 'eng_p'
+16:56:24.165599 [wof-names-validate] WARNING Feature ID 85892915 has an invalid language tag 'eng_p'
+16:59:14.273177 [wof-names-validate][index] STATUS directory /usr/local/data/whosonfirst-data/data 4m30.089235929s
+```
+
 ## See also
 
 * https://github.com/whosonfirst/go-whosonfirst-names
